@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class OrderController {
 
-    @Autowired
+    @Autowired(required = false)
     OrderService orderService;
 
     @Value("${server.port}")
